@@ -31,6 +31,7 @@ int division(int a, int b, int& c)
 int power(int a, int b)
 {
     int c = 1;
+#pragma unroll 5
     for (int i = 0; i < b; ++i)
     {
         c = c * a;
